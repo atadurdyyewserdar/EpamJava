@@ -14,10 +14,17 @@ public class Main
         b = DataScanner.enterDoubleFromConsole();
         h = DataScanner.enterDoubleFromConsole();
 
-        double[] arr = Task10Logic.getArray(a, b, h);
-
-        Printer.printHeader();
-        Printer.printValues(arr, a, b, h);
-        Printer.printLine();
+        try
+        {
+            double[] arr = Task10Logic.getArray(a, b, h);
+            System.out.println("Результат вычисления: ");
+            Printer.printHeader();
+            Printer.printValues(arr, a, b, h);
+            Printer.printLine();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }

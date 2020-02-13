@@ -13,7 +13,14 @@ public class Main
         month = DataScanner.enterIntFromConsole();
         System.out.print("Введите год: ");
         year = DataScanner.enterIntFromConsole();
-        int result2 = Task2Logic.getDays(month, year);
-        System.out.print("Результат вычисления: " + result2);
+        int result2 = 0;
+        try
+        {
+            result2 = Task2Logic.getDays(month, year);
+            System.out.print("Результат вычисления: " + result2);
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }

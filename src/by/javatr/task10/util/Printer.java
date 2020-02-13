@@ -9,7 +9,8 @@ public class Printer
         System.out.println("-----------------------------------------------");
     }
 
-    public static void printLine(){
+    public static void printLine()
+    {
         System.out.println("-----------------------------------------------\n");
     }
 

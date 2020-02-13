@@ -12,6 +12,7 @@ public class Main
         b = DataScanner.enterIntFromConsole();
         c = DataScanner.enterIntFromConsole();
         d = DataScanner.enterIntFromConsole();
-        System.out.println(Task4Logic.ifExistsTwoEven(a, b, c, d));
+        boolean result = Task4Logic.ifExistsTwoEven(a, b, c, d);
+        System.out.println(result);
     }
 }

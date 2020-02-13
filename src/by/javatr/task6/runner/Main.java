@@ -8,8 +8,21 @@ public class Main
     public static void main(String[] args)
     {
         int n = DataScanner.enterIntFromConsole();
-        System.out.println(Task6Logic.getHour(n));
-        System.out.println(Task6Logic.getMinute(n));
-        System.out.println(Task6Logic.getSeconds(n));
+        try
+        {
+            int hours, minutes, seconds;
+
+            hours = Task6Logic.getHour(n);
+            minutes = Task6Logic.getMinute(n);
+            seconds = Task6Logic.getSeconds(n);
+
+            System.out.println(hours);
+            System.out.println(minutes);
+            System.out.println(seconds);
+
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }

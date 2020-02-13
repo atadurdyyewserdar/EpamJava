@@ -2,12 +2,9 @@ package by.javatr.task5.util;
 
 public class Task5Logic
 {
-    public static boolean perfectNumber(int number)
+    public static boolean isPerfectNumber(int number)
     {
-        if (number < 2)
-        {
-            return false;
-        }
+        boolean result = false;
 
         int sum = 0;
 
@@ -18,6 +15,12 @@ public class Task5Logic
                 sum += i;
             }
         }
-        return sum == number;
+
+        if (sum == number && number > 0)
+        {
+            result = true;
+        }
+
+        return result;
     }
 }
