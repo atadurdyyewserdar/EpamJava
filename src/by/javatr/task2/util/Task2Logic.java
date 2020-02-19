@@ -8,7 +8,7 @@ public class Task2Logic
     {
         if (month > 12 || month < 1 || year < 0)
         {
-            throw new Exception("Wrong arguments...");
+            throw new Exception("Wrong parameters...");
         }
 
         int result = DAYS[month-1];

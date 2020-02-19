@@ -9,14 +9,7 @@ public class Main
     {
         System.out.print("Введите число x: ");
         double x = DataScanner.enterDoubleFromConsole();
-        try
-        {
-            double result = Task8Logic.mathematicalFunction(x);
-            System.out.println("Результат вычисления: " + result);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+        double result = Task8Logic.mathematicalFunction(x);
+        System.out.println("Результат вычисления: " + result);
     }
 }

@@ -20,7 +20,7 @@ public class Task3Logic
     {
         if (S1 < S2)
         {
-            throw new Exception("Wrong argument");
+            throw new Exception("Wrong a argument");
         }
         return S1 / S2;
     }

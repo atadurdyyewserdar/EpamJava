@@ -2,7 +2,7 @@ package by.javatr.task8.util;
 
 public class Task8Logic
 {
-    public static double mathematicalFunction(double x) throws Exception
+    public static double mathematicalFunction(double x)
     {
         double result;
 
@@ -13,10 +13,6 @@ public class Task8Logic
         else
         {
             double temp = Math.pow(x, 3) - 6;
-            if (temp == 0)
-            {
-                throw new Exception("Dividing to zero...");
-            }
             result = 1 / temp;
         }
         return result;

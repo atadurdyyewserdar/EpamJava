@@ -11,10 +11,9 @@ public class Task10Logic
 
         int length = (int) Math.ceil((b - a) / h);
         double[] mas = new double[length];
-        System.out.println(length);
         int k = 0;
 
-        for (double i = a; i < b; i += h)
+        for (double i = a; i <= b; i += h)
         {
             mas[k] = Math.tan(i);
             k++;
